@@ -1,0 +1,36 @@
+GET http://localhost:3000/users
+
+###Login Route
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email": "jhondoe@gmail.com",
+  "password": "1234"
+}
+
+
+###Register Route
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "email": "youremail@gmail.com",
+  "password": "1234"
+}
+
+###Refresh token Route
+POST http://localhost:5000/token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJqaG9uIiwiZW1haWwiOiJqaG9uQGdtYWlsLmNvbSIsImlhdCI6MTY5NTYyODczMywiZXhwIjoxNjk1NjI4NzQ4fQ.46Y9fKFBK0XIg5kqTB_bpZ8H7qOLUIXfQWYL44rzanc"
+}
+
+###Logout Route
+DELETE http://localhost:5000/logout
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI1ODcyOTIsImV4cCI6MTYyNDE0NDg5MiwiYXVkIjoiNWVlYTBlOTlkMTU3ZjYzZjNlMzYxYjQxIiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.OGfV-n2fsuV2D5nvUGEzU7KLtkbIy1Pmm4DwxB75MKU"
+}
